@@ -1,0 +1,402 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+/* common style */
+body {
+    font-family: 'Poppins', sans-serif;
+    
+}
+/*---------------
+  header Style
+----------------- */
+.header-color{
+    background-color: #2D25A0;
+    width: 1440px;
+    
+}
+.padding-nav{
+    padding-left: 150px;
+}
+nav > ul{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+position: static;
+width: 587px;
+height: 24px;
+left: 0px;
+top: 10px;
+    
+  
+}
+nav li{
+    list-style: none;
+    
+   
+}
+nav>ul>li>a{
+    text-decoration: none;
+    list-style: none;
+    font-size: 15px;
+    color: rgb(79, 186, 248);
+    padding: 5px 15px;
+    position: relative;
+    
+}
+
+nav>ul>li>a:hover{
+    
+    list-style: none;
+    font-size: 15px;
+    color: whitesmoke;
+    background-color: #E02C6D;
+    font-weight: 700;
+    padding: 0px 10px;
+    border-radius: 10px;
+    
+}
+.dropdown{
+    text-align: center;
+    display: none;
+    position: absolute;
+    padding: 0px 18px;
+    font-size: 15px;
+    background-color: whitesmoke;
+    list-style: none;
+    
+    
+}
+
+nav>ul>li:hover>ul{
+    display: block;
+   
+  
+  
+}
+nav>ul>li>ul>li>a:hover{
+    
+    background-color:rgb(79, 186, 248);
+    color: #E02C6D;
+    font-weight: 100;
+    padding-right: 5px;
+    padding: 0px 5px;
+    border-radius: 10px;
+   
+    
+}
+nav>ul>li>ul>li>a{
+    
+    text-decoration: none;
+    
+}
+
+/* ------------------------
+  About banner & banner-img 
+----------------------------*/
+.top-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2D25A0 ;
+    width: 1440px;
+    height: 677px; 
+    
+}
+.about-banner h1{
+    margin-bottom: 52px;
+    width: 485px;
+    height: 230px; 
+    font-size: 64px;
+    line-height: 80px;
+    margin-right: 31.5px;
+    color: #FFFFFF;
+    
+
+    
+}
+/*----------------------------
+    About-banner & watch-Live
+ ------------------------------ */
+.watch-live {
+      
+    background-color: #E02C6D ;
+    margin: 16px 0px;
+    width: 168px;
+    height: 44px;
+    border-radius: 15px;   
+}
+.watch-live:hover a{
+    background-image: linear-gradient(#E02C6D ,rgba(23, 182, 230, 0.986)) ;
+    color:#FFFFFF ;
+}
+.watch-live a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 24px;
+    text-decoration: none;
+    font-size: 16px;
+    align-items: center;
+    border-radius: 20px;
+  
+}
+/* TOP-Image */
+.banner-image {
+    width: 556.01px;
+    height: 438px;
+    margin-left: 31.5px;
+}
+/* -------------
+  About-player
+---------------- */
+.container{
+   width: 1200px;
+    height: 2000px; 
+    margin: 40px 0 0 200px;
+
+
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+    grid-column-gap: 30px;
+    grid-row-gap: 24px;
+    width: 330px;
+    height: 474px;
+    
+    
+    
+
+}
+.player p{
+    font: 10px;
+}
+ .player{
+    box-shadow: 5px 5px 5px 10px whitesmoke;
+    width: 330px;
+    height: 456px;
+    border-radius: 10px;
+}
+.player-info{   
+    width: 300px;
+    height: 154px;
+    padding: 0px 0px 0px 15px;
+    
+
+}
+.player-image img{
+    width: 300px;
+    height: 256px;
+    padding: 15px 20px 0px 15px;
+}
+/*-------------------
+All-highlight style
+--------------------- */
+.container2{
+    
+}
+
+.highlight{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+.highlight-banner{
+    width: 466px;
+height: 309px;
+}
+.highlight-banner h1{
+     font-size:44px;
+    line-height: 50px;
+    margin-bottom: 52px;
+    margin-right: 31.5px;
+    color: black;
+}
+.highlight-banner  p{
+    font-size: 16px;
+    line-height: 28px;
+}
+.highlight-banner img{
+    width: 567px;
+height: 427px;
+}
+footer img{
+    position: static;
+width: 483.87px;
+height: 110px;
+margin: 20px 0px;
+
+}
+.footer-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo  {
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.footer-flex{
+    display: grid;
+    grid-template-columns: repeat(4,50px);
+    justify-content: center;
+}
+.footer-flex img{
+    width: 25px;
+    height: 25px;
+}
+ .footer-h1{
+ text-align: center;
+ font-size: 6px;
+ }
+ /* ----------------
+    Mobile-Device
+ ------------------- */
+ @media only screen and (max-width:687px) {
+     body{
+         margin: 0;
+     }
+     /* --------------
+            Header 
+       --------------- */
+       .padding-nav{
+         padding: 1px 0 0 0;
+         
+       }
+       nav > ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        position: static;
+        width: 360px;
+        height: 24px;
+        left: 0px;
+        top: 10px;
+     }
+     .top-container {
+         display: grid;
+        grid-template-rows: repeat(1,1fr);
+        align-items: center;
+        width: 360px;
+        height: 695px;
+        
+     }
+        .header-color{ 
+            width: 360px;
+            height: 760px;
+        }
+        .banner-image {
+
+            
+width: 329px;
+height: 259.17px;
+width: 300px;
+height: 256px;
+
+        }
+        .about-banner>h1{
+            position: absolute;
+width: 278px;
+height: 138px;
+left: 16px;
+top: 112px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 50px;
+
+        }
+.about-banner  .watch-live{
+            position: absolute;
+            width: 168px;
+            height: 44px;
+            left: 19px;
+            top: 350px;
+            
+        }
+/*----------------------
+   Media_query players
+ -----------------------*/
+.container{
+    width: 330px;
+height: 6100px;
+margin: 0;
+}
+.players {
+    display: grid;
+    grid-template-columns: repeat(1,0);
+    margin-left: 10px;
+    
+}
+.player{
+    margin-top: 30px;
+    
+
+}
+/*-----------------------------
+ All-higlight & Messi win copa
+ ------------------------------ */
+ .container2 >.highlight{
+     display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-row-gap: 100px;
+    
+    
+ }   
+ .highlight-banner{
+    
+        width: 329px;
+        height: 299px;
+ }
+    .highlight h1{
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: bolder;
+    }
+ 
+
+.highlight-banner img{
+    width: 328px;
+    height: 248px;
+    margin: 0;
+    position: relative;
+
+
+}
+
+.highlight-banner .watch-live{
+    position: relative;
+}
+.container3 >.highlight{
+    
+        display: grid;
+       grid-template-rows: repeat(1,1fr);
+       grid-row-gap: 100px;
+       align-items: center;
+       
+}
+/*----------------
+    Footer media
+ ----------------- */
+footer{
+    width: 329px;
+    position: relative;
+    
+}
+
+.footer-image img{
+    width: 100%;
+}
+br{
+         display: none;
+     }
+ }
